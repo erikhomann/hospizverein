@@ -1,2 +1,66 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <%= link_to image_tag("horizonsmall.jpg", :alt => "logo", :title => "Home"), root_path %>
+      <div class="carousel-caption carousel-text" >
+        <h4>Horizont Hospizinitiative Seesen e.V.</h4>
+        	<p>für die Begleitung Sterbender, Schwerkranker und ihrer Angehörigen</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= link_to image_tag("volksbank.jpg", :alt => "logo", :title => "Volksbank"), 'https://www.myvoba.com/wir-fuer-sie/presse/pressemitteilung/dezember-2013/spende_hospiz_initiative_seesen.html' %>
+      <div class="carousel-caption carousel-text">
+        <h4>Spende der Volksbank eG</h4>
+        <p>Die Volksbank eG in Seesen hat der Hospiz-Initiative Seesen e.V. einen Betrag von 1.000,00 Euro aus den Reinerträgen des VR-Gewinnsparens gespendet.</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= link_to image_tag("hospizbrunch.jpg", :alt => "logo", :title => "Veranstaltungen"), veranstaltungen_path %>
+      <div class="carousel-caption carousel-text">
+        <h4>Hospizbrunch</h4>
+        <p>Eine von vielen Veranstaltungen, die wir organisieren, um über die Hospizarbeit zu informieren.
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="row">
+  <div class="col-md-4">
+  	<h2>Sterbebegleitung</h2>
+  	<p>Wir bieten Ihnen Begleitung im Rahmen eines ambulan- ten Dienstes an. Das bedeutet, dass ehrenamtliche Mitarbeiter/- innen auf Wunsch zu Schwerkranken und Sterbenden nach Hause kommen, sie besuchen und sie selbst und ihre Angehörigen unterstützen.</p>
+  	<button type="button" class="btn btn-warning"><%= link_to "MEHR", begleitdienst_path %></button>
+  </div>
+  <div class="col-md-4">
+  	<h2>Kontaktaufnahme</h2>
+  	<p>Horizont Hospizinitiative Seesen e.V. ist zu erreichen unter der Telefonnummer: 0160 / 75 80 842.
+	Das Telefon ist jeden Tag erreichbar. Sie sind entweder persönlich mit einer/-m Hospizmitarbeiter/-in verbunden oder ein Anrufbeantworter, der täglich abgehört wird, nimmt Ihr Anliegen entgegen.</p>
+	<button type="button" class="btn btn-warning"><%= link_to "MEHR", wir_path %></button>
+  </div>
+  <!-- Optional: clear the XS cols if their content doesn't match in height -->
+  <div class="clearfix visible-xs-block"></div>
+  <div class="col-md-4">
+  	<h2>Mitmachen</h2>
+  	<p>Wenn Sie mehr über die Hospizarbeit wissen möchten, wenn Sie die Arbeit unserer Initiative durch Ihre för- dernde Mitgliedschaft oder mit einer Spende unterstüt- zen möchten, dann wenden Sie sich bitte an unseren Vorstand:</p>
+  	<button type="button" class="btn btn-warning"><%= link_to "MEHR", wir_path %></button>
+  </div>
+</div>
+
+</div>

@@ -3,4 +3,8 @@ class PagesController < ApplicationController
   end
   def Veranstaltungen
   end
+  def Wir 
+  end
+  def Begleitdienst
+  end
 end

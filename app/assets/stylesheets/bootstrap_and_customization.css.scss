@@ -1,7 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700|Indie+Flower);
 
 $body-bg:                                                   #ecf0f1;
 $font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-serif:						'Indie Flower', cursive;
 $navbar-inverse-bg: #F0AD4E;
 $navbar-inverse-color: #FFF;
 $navbar-inverse-link-color: #FFF;
@@ -17,6 +18,11 @@ footer {
 	padding: 6px;
 	border-radius: 5px;
 	margin-top: 15px;
+	color: white;
+}
+
+.orange-heading {
+	background-color: #F0AD4E;
 	color: white;
 }
 
@@ -68,6 +74,40 @@ header {
 	color: white;
 	padding: 10px;
 	border-radius: 2px;
+}
+
+header h2, footer h2 {
+	font-family: 'Indie Flower', cursive, serif;
+	text-align: center;
+}
+
+.handwriting {
+	font-size: 24px;
+	font-family: 'Indie Flower', cursive, serif;
+	text-align: center;
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.p-height {
+	height: 110px;
+}
+
+.p-height-big {
+	height: 140px;
+}
+
+.p-center {
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 991px) {
+	.col-footer {
+		display: none;
+	}
 }
 
 form {

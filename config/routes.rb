@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   # devise_for :users
   root 'pages#home'
   get 'veranstaltungen' => 'pages#veranstaltungen'
+  get 'trauercafe' => 'pages#trauercafe'
   get 'begleitdienst' => 'pages#begleitdienst'
   get 'wir' => 'pages#wir'
 

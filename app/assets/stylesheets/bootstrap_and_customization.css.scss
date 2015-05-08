@@ -85,23 +85,32 @@ header h2, footer h2 {
 	font-size: 24px;
 	font-family: 'Indie Flower', cursive, serif;
 	text-align: center;
-	position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-.p-height {
-	height: 110px;
+
+.top-paragraph {
+	height: 100px;
+	display: table-cell;
+	vertical-align: middle;
 }
 
-.p-height-big {
-	height: 140px;
+.bottom-table {
+	display: table;
+	width: 100%;
 }
 
-.p-center {
-	position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+.bottom-paragraph {
+	height: 120px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.bottom-paragraph p {
+	margin-bottom: 0;
+}
+
+.col-footer {
+	margin-top: 0;
 }
 
 @media only screen and (max-width: 991px) {

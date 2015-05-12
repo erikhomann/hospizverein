@@ -26,6 +26,10 @@ footer {
 	color: white;
 }
 
+hr {
+	border-top: 1px solid #F0AD4E !important;
+}
+
 footer ul {
 	margin-top: inherit;
 	list-style: none;
@@ -51,7 +55,7 @@ span {
 	border-radius: 5px;
 }
 
-.carousel-text a, .carousel-text a:hover{
+.carousel-text a, .carousel-text a:hover, article a, article a:hover {
 	color: #F0AD4E;
 }
 .videoWrapper {
